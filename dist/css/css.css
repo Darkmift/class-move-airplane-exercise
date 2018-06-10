@@ -1,0 +1,54 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+    border: 1px solid blue;
+}
+
+.flex-item {
+    position: relative;
+    display: flex;
+    background-color: tomato;
+    padding: 5px;
+    width: 75vh;
+    height: 75vh;
+    margin: 10px;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(54, 5, 5);
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+    background-image: url("../../src/clouds.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#player {
+    position: absolute;
+    top: calc((75vh/2)-3vh);
+    left: calc((75vh/2)-3vh);
+    width: calc((75vh/2)+3vh);
+    height: calc((75vh/2)+3vh);
+}
