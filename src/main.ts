@@ -37,3 +37,6 @@ setInterval(function () {
 	wh = pane.width() - box.width();
 	wv = pane.height() - box.height();
 }, 20);
+
+var song = new Audio("src/song.mp3");
+song.play();
