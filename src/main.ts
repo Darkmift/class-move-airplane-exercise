@@ -3,12 +3,12 @@ cl('online');
 
 var pane: JQuery = $('.flex-item'),
 	box: JQuery = $('#player'),
-	wh = pane.width() - box.width(),
-	wv = pane.height() - box.height(),
-	d = {},
-	x = 5;
+	wh: number = pane.width() - box.width(),
+	wv: number = pane.height() - box.height(),
+	d: object = {},
+	x: number = 5;
 
-function newh(v, a, b) {
+function newh(v: string, a: number, b: number): number {
 	var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
 	if (n < 1 || n > wh) {
 		alert('Hboom!');
@@ -17,7 +17,7 @@ function newh(v, a, b) {
 	return n < 0 ? 0 : n > wh ? wh : n;
 }
 
-function newv(v, a, b) {
+function newv(v: string, a: number, b: number): number {
 	var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
 	if (n < 1 || n > wv) {
 		alert('Wboom!');
@@ -38,7 +38,7 @@ setInterval(function () {
 	wv = pane.height() - box.height();
 }, 20);
 
-var song = new Audio("src/song.mp3");
+var song: HTMLAudioElement = new Audio("src/song.mp3");
 // song.play();
 song.setAttribute("autoplay", "");
 // song.;
