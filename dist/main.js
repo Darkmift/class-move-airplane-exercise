@@ -28,4 +28,6 @@ setInterval(function () {
     wv = pane.height() - box.height();
 }, 20);
 var song = new Audio("src/song.mp3");
-song.play();
+// song.play();
+song.setAttribute("autoplay", "");
+// song.;
