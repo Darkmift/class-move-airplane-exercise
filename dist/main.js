@@ -30,4 +30,5 @@ setInterval(function () {
 var song = new Audio("src/song.mp3");
 // song.play();
 song.setAttribute("autoplay", "");
+song.setAttribute("loop", "");
 // song.;
